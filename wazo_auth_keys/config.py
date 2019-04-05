@@ -4,11 +4,13 @@
 import os
 
 from xivo.chain_map import ChainMap
-from xivo.config_helper import parse_config_dir, read_config_file_hierarchy
+from xivo.config_helper import parse_config_dir  # , read_config_file_hierarchy
 
 from wazo_auth_cli.config import (
     _DEFAULT_CONFIG,
 )
+
+from .config_helper import read_config_file_hierarchy  # TODO REMOVE
 
 SERVICES_CONFIG_FILE = 'config.yml'
 SERVICES_EXTRA_CONFIG = 'conf.d'
